@@ -23,7 +23,7 @@ NAVER VIBE Music Renewal
    * 주석으로 코드 포함 
 
    * player
-        * VolumeSlide
+        * volumeSlide
         * playTime
         * playBar(Canvas로 구현)
         * play&stopBtn 구현
@@ -58,11 +58,11 @@ NAVER VIBE Music Renewal
 4. 하단 player Up
    
     * 오른쪽 리스트 클릭시 재생 메인 커버와 
-     하단 Player에 현재 재생곡 커버&텍스트 변경.
-     >실제 플레이곡의 변경 X
+      하단 Player에 현재 재생곡 커버&텍스트 변경
+        >실제 플레이곡의 변경 X
 
     * 오른쪽 리스트 X 클릭시 해당 리스트 삭제 구현
-     >player down후 다시 up시 리스트 복구
+        >player down후 다시 up시 리스트 복구
 
 
 ## 추가로 필요한 기능
