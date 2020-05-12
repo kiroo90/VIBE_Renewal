@@ -63,7 +63,7 @@ $(document).ready(() => {
     });
 
     // on플레이리스트 오른쪽 리스트 삭제버튼
-    $(".JsItemClose").on("click", (e) => {
+    $(".jsItemClose").on("click", (e) => {
         $(e.currentTarget).parents(".list_music").addClass("close");
         let setCount = true
         if(setCount){
