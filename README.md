@@ -20,26 +20,32 @@ NAVER VIBE Music Renewal
 
 2. vanilla Js를 이용해서 player,slide 구현 연습 
 
-   *주석으로 코드 포함 
+   * 주석으로 코드 포함 
 
-   *player는 VolumeSlide, playTime, playBar(Canvas로 구현),
+   * player는 VolumeSlide, playTime, playBar(Canvas로 구현),
    play&stopBtn 구현
 
-   *vanilla Js 이용 slide구현 autoSlide와 btnSlide구현 {
-   --translate3d으로 옆으로 미는 방식 nextBtn과 prevBtn무리 없이 작동
-   하지만 1페이지가 될때 setTimeout이 작동하면서 끝과 시작점으로 돌아오는 방식인데
-   돌아오는 시작점이 1페이지에 겹치면 오작동.
-   즉 1페이지에서 nextBtn와 prevBtn을 한번식 누르면 오작동.
-   나머지는 제대로 구현 }
+   * vanilla Js 이용 slide구현 autoSlide와 btnSlide구현 
+        > translate3d으로 옆으로 미는 방식
+   * nextBtn과 prevBtn무리 없이 작동
+        > 하지만 1페이지가 될때 setTimeout이 작동하면서 끝과 시작점으로 돌아오는 방식인데
+   돌아오는 시작점이 1페이지에 겹치면 오작동, 
+       <pre>
+       <code>
+        setTimeout(function(){
+            item.style.transition = '0s';
+            item.style.transform = `translate3d(-${1180*slideLen}px, 0px, 0px)`;
+         },501);
+        </code>
+        </pre>
 
 3. 위의 vanilla Js를 JQuery로 변환
-   *jplayer 이용해 player연동
+   * jplayer 이용해 player연동
    
-   *slick.js 이용해 slide 연동 
-   구현-
-   Main = Btn,auto
-   News = Dots,auto
-   Side_Nav = auto
+   * slick.js 이용해 slide 연동 
+        * Main = Btn,auto
+        * News = Dots,auto
+        * Side_Nav = auto
 
 
 4. 하단 Player Up
