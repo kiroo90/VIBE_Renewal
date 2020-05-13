@@ -16,7 +16,7 @@ NAVER VIBE Music Renewal
 
 ## VIBE JS 기능
 
-1. 기본적은 onClick Event 구현 
+1. 기본적인 onClick Event 구현 
 
 2. vanilla Js를 이용해서 player,slide 구현 연습 
 
