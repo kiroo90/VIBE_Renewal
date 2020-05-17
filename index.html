@@ -753,6 +753,271 @@
             </div>
         </article>
     </section>
+    
+    <!-- 하단 플레이어 네비 -->
+    <nav class="player_nav__bottom">
+    
+            <!-- 왼쪽 -->
+            <article class="play_info">
+                <img class="jsCover" src="./img/playlist_01.jpg" alt="현재곡이미지">
+                <div class="play_title">
+                    <div>
+                        <h4>along</h4>
+                        <h5>MIBS(밉스)</h5>
+                    </div>
+                </div>
+                <div>
+                    <span class="clip">좋아요 하트 아이콘</span>
+                    <i class="xi-heart jsHeart"></i>
+                </div>
+                <div class="drop">
+                    <div>
+                        <span class="clip">드롭다운 메뉴 열기 닫기 아이콘</span>
+                        <i class="xi-ellipsis-h onDrop"></i> 
+                        <ul class="list_dropdown">
+                            <li><a href="#">보관함에 추가</a></li>
+                            <li><a href="#">내 플레이리스트 추가</a></li>
+                            <li><a href="#">바로 다음에 추가</a></li>
+                            <li><a href="#">맨 아래에 추가</a></li>
+                            <li><a href="#">MP3 구매</a></li>
+                            <li><a href="#">공유</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- jplayer 끝 -->
+            </article>
+            <div id="jquery_jplayer" class="jp-jplayer">
+                <span class="clip">재생음악</span>
+            </div>
+            <div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+                <div class="jp-type-single">
+                    <div class="jp-gui jp-interface">
+                        <div class="jp-controls">
+                            <div>
+                                <span class="clip">랜덤 재생 아이콘</span>
+                                <i class="xi-shuffle jsIcon"></i>
+                            </div>
+                            <div>
+                                <span class="clip">전 곡으로 이동 아이콘</span>
+                                <i class="xi-step-backward jsIcon"></i> 
+                            </div>
+                            <div class="play">
+                                <button class="jp-play" role="button" tabindex="0">
+                                    <span class="clip">재생 아이콘</span>
+                                    <i class="xi-play"></i>
+                                </button>
+                                <button class="jp-pause" role="button" tabindex="0">
+                                    <span class="clip">정지 아이콘</span>
+                                    <i class="xi-pause"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <span class="clip">다음 곡으로 이동 아이콘</span>
+                                <i class="xi-step-forward jsIcon"></i> 
+                            </div>
+                            <div>
+                                <span class="clip">반복 재생 아이콘</span>
+                                <i class="xi-repeat jsIcon"></i>
+                            </div>
+                        </div>
+                        <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                                <div class="jp-play-bar">
+                                    <span class="clip">볼륨 컨트롤 바</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-volume-controls">
+                            <div class="jp-time-holder">
+                                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;
+                                    <span class="clip">현재 재생 시간</span>
+                                </div>
+                                <div>/</div>
+                                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;
+                                    <span class="clip">재생 시간</span>
+                                </div>
+                            </div>
+                            <button class="jp-mute" role="button" tabindex="0">
+                                <div>
+                                    <span class="clip">볼륨 끄기 아이콘</span>
+                                    <i class="xi-volume-up "></i>
+                                </div>
+                            </button>
+                            <button class="jp-unmute" role="button" tabindex="0">
+                                <div>
+                                    <span class="clip">볼륨 켜기 아이콘</span>
+                                    <i class="xi-volume-off"></i>
+                                </div>
+                            </button>
+                            <div class="jp-volume-bar">
+                                <div class="jp-volume-bar-value"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- jplayer  -->
+            <div class="play_view__btn">
+                <span class="clip">플레이리스트 열기 아이콘</span>
+                <i class="xi-angle-up arrowBtn"></i>
+                <span class="clip">플레이리스트 닫기 아이콘</span>
+                <i class="xi-angle-down arrowBtn none"></i>
+            </div>
+    </nav>
+    
+    <!-- 하단 플레이어 네비 온 -->
+    <section class="play_view__container">
+    
+            <!-- 메인 커버 이미지 -->
+            <article class="main_cover">
+                <img class="jsCover" src="./img/playlist_01.jpg" alt="현재 곡 이미지">
+            </article>
+    
+            <!-- 오른쪽 플레이 리스트 -->
+            <article class="list_right_container">
+                <div class="list_header">
+                    <h3>이어지는 노래</h3>
+                    <div class="icon">
+                        <span class="clip">랜덤 재생 아이콘</span>
+                        <i class="xi-shuffle jsIcon"></i>
+                        <span class="clip">반복 재생 아이콘</span>
+                        <i class="xi-repeat jsIcon"></i>
+                    </div>
+                </div>
+                <div class="list_container">
+                    <div class="list_music co">
+                        <div class="container">
+                            <img class="jsimg" src="./img/playlist_01.jpg" alt="다음 곡 이미지">
+                            <div class="music_info">
+                                <h4>along</h4>
+                                <h5>MIBS(밉스)</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img class="jsimg"src="./img/playlist_02.jpg" alt="다음 곡 이미지_02">
+                            <div class="music_info">
+                                <h4>nniigghhtt (Feat. Jade)</h4>
+                                <h5>글로잉독(glowingdog)</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img class="jsimg" src="./img/playlist_03.jpg" alt="다음 곡 이미지_03">
+                            <div class="music_info">
+                                <h4>Satellite (Feat. ASH ISLAND)</h4>
+                                <h5>핫펠트 (HA:TFELT)</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img src="./img/playlist_04.jpg" alt="다음 곡 이미지_04">
+                            <div class="music_info">
+                                <h4>요즘 어때 (Feat. 김선재)</h4>
+                                <h5>kumira</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img src="./img/playlist_05.jpg" alt="다음 곡 이미지_05">
+                            <div class="music_info">
+                                <h4>somebody loves you</h4>
+                                <h5>Jeremy Zucker</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img src="./img/playlist_06.jpg" alt="다음 곡 이미지_06">
+                            <div class="music_info">
+                                <h4>claws</h4>
+                                <h5>Charli XCX</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img src="./img/playlist_07.jpg" alt="다음 곡 이미지_07">
+                            <div class="music_info">
+                                <h4>차라리 잘됐어 (Feat. 적재)</h4>
+                                <h5>벤</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img src="./img/playlist_08.jpg" alt="다음 곡 이미지_08">
+                            <div class="music_info">
+                                <h4>Freedom (Feat. Zak Abel)</h4>
+                                <h5>Kygo</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img src="./img/playlist_09.jpg" alt="다음 곡 이미지_09">
+                            <div class="music_info">
+                                <h4>Secret (Feat. Summer Walker)</h4>
+                                <h5>21 Savage</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                    <div class="list_music">
+                        <div class="container">
+                            <img src="./img/playlist_10.jpg" alt="다음 곡 이미지_10">
+                            <div class="music_info">
+                                <h4>All The Way Up (K)</h4>
+                                <h5>박재범</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="clip">곡 삭제 아이콘</span>
+                            <i class="xi-close jsItemClose"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </section>
 
     <!-- 푸터 -->
     <footer class="footer_container">
@@ -806,271 +1071,6 @@
             </div>
         </article>
     </footer>
-
-    <!-- 하단 플레이어 네비 -->
-    <nav class="player_nav__bottom">
-
-        <!-- 왼쪽 -->
-        <article class="play_info">
-            <img class="jsCover" src="./img/playlist_01.jpg" alt="현재곡이미지">
-            <div class="play_title">
-                <div>
-                    <h4>along</h4>
-                    <h5>MIBS(밉스)</h5>
-                </div>
-            </div>
-            <div>
-                <span class="clip">좋아요 하트 아이콘</span>
-                <i class="xi-heart jsHeart"></i>
-            </div>
-            <div class="drop">
-                <div>
-                    <span class="clip">드롭다운 메뉴 열기 닫기 아이콘</span>
-                    <i class="xi-ellipsis-h onDrop"></i> 
-                    <ul class="list_dropdown">
-                        <li><a href="#">보관함에 추가</a></li>
-                        <li><a href="#">내 플레이리스트 추가</a></li>
-                        <li><a href="#">바로 다음에 추가</a></li>
-                        <li><a href="#">맨 아래에 추가</a></li>
-                        <li><a href="#">MP3 구매</a></li>
-                        <li><a href="#">공유</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- jplayer 끝 -->
-        </article>
-        <div id="jquery_jplayer" class="jp-jplayer">
-            <span class="clip">재생음악</span>
-        </div>
-        <div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
-            <div class="jp-type-single">
-                <div class="jp-gui jp-interface">
-                    <div class="jp-controls">
-                        <div>
-                            <span class="clip">랜덤 재생 아이콘</span>
-                            <i class="xi-shuffle jsIcon"></i>
-                        </div>
-                        <div>
-                            <span class="clip">전 곡으로 이동 아이콘</span>
-                            <i class="xi-step-backward jsIcon"></i> 
-                        </div>
-                        <div class="play">
-                            <button class="jp-play" role="button" tabindex="0">
-                                <span class="clip">재생 아이콘</span>
-                                <i class="xi-play"></i>
-                            </button>
-                            <button class="jp-pause" role="button" tabindex="0">
-                                <span class="clip">정지 아이콘</span>
-                                <i class="xi-pause"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <span class="clip">다음 곡으로 이동 아이콘</span>
-                            <i class="xi-step-forward jsIcon"></i> 
-                        </div>
-                        <div>
-                            <span class="clip">반복 재생 아이콘</span>
-                            <i class="xi-repeat jsIcon"></i>
-                        </div>
-                    </div>
-                    <div class="jp-progress">
-                        <div class="jp-seek-bar">
-                            <div class="jp-play-bar">
-                                <span class="clip">볼륨 컨트롤 바</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="jp-volume-controls">
-                        <div class="jp-time-holder">
-                            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;
-                                <span class="clip">현재 재생 시간</span>
-                            </div>
-                            <div>/</div>
-                            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;
-                                <span class="clip">재생 시간</span>
-                            </div>
-                        </div>
-                        <button class="jp-mute" role="button" tabindex="0">
-                            <div>
-                                <span class="clip">볼륨 끄기 아이콘</span>
-                                <i class="xi-volume-up "></i>
-                            </div>
-                        </button>
-                        <button class="jp-unmute" role="button" tabindex="0">
-                            <div>
-                                <span class="clip">볼륨 켜기 아이콘</span>
-                                <i class="xi-volume-off"></i>
-                            </div>
-                        </button>
-                        <div class="jp-volume-bar">
-                            <div class="jp-volume-bar-value"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!-- jplayer  -->
-        <div class="play_view__btn">
-            <span class="clip">플레이리스트 열기 아이콘</span>
-            <i class="xi-angle-up arrowBtn"></i>
-            <span class="clip">플레이리스트 닫기 아이콘</span>
-            <i class="xi-angle-down arrowBtn none"></i>
-        </div>
-    </nav>
-    
-    <!-- 하단 플레이어 네비 온 -->
-    <section class="play_view__container">
-
-        <!-- 메인 커버 이미지 -->
-        <article class="main_cover">
-            <img class="jsCover" src="./img/playlist_01.jpg" alt="현재 곡 이미지">
-        </article>
-
-        <!-- 오른쪽 플레이 리스트 -->
-        <article class="list_right_container">
-            <div class="list_header">
-                <h3>이어지는 노래</h3>
-                <div class="icon">
-                    <span class="clip">랜덤 재생 아이콘</span>
-                    <i class="xi-shuffle jsIcon"></i>
-                    <span class="clip">반복 재생 아이콘</span>
-                    <i class="xi-repeat jsIcon"></i>
-                </div>
-            </div>
-            <div class="list_container">
-                <div class="list_music co">
-                    <div class="container">
-                        <img class="jsimg" src="./img/playlist_01.jpg" alt="다음 곡 이미지">
-                        <div class="music_info">
-                            <h4>along</h4>
-                            <h5>MIBS(밉스)</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img class="jsimg"src="./img/playlist_02.jpg" alt="다음 곡 이미지_02">
-                        <div class="music_info">
-                            <h4>nniigghhtt (Feat. Jade)</h4>
-                            <h5>글로잉독(glowingdog)</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img class="jsimg" src="./img/playlist_03.jpg" alt="다음 곡 이미지_03">
-                        <div class="music_info">
-                            <h4>Satellite (Feat. ASH ISLAND)</h4>
-                            <h5>핫펠트 (HA:TFELT)</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img src="./img/playlist_04.jpg" alt="다음 곡 이미지_04">
-                        <div class="music_info">
-                            <h4>요즘 어때 (Feat. 김선재)</h4>
-                            <h5>kumira</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img src="./img/playlist_05.jpg" alt="다음 곡 이미지_05">
-                        <div class="music_info">
-                            <h4>somebody loves you</h4>
-                            <h5>Jeremy Zucker</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img src="./img/playlist_06.jpg" alt="다음 곡 이미지_06">
-                        <div class="music_info">
-                            <h4>claws</h4>
-                            <h5>Charli XCX</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img src="./img/playlist_07.jpg" alt="다음 곡 이미지_07">
-                        <div class="music_info">
-                            <h4>차라리 잘됐어 (Feat. 적재)</h4>
-                            <h5>벤</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img src="./img/playlist_08.jpg" alt="다음 곡 이미지_08">
-                        <div class="music_info">
-                            <h4>Freedom (Feat. Zak Abel)</h4>
-                            <h5>Kygo</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img src="./img/playlist_09.jpg" alt="다음 곡 이미지_09">
-                        <div class="music_info">
-                            <h4>Secret (Feat. Summer Walker)</h4>
-                            <h5>21 Savage</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-                <div class="list_music">
-                    <div class="container">
-                        <img src="./img/playlist_10.jpg" alt="다음 곡 이미지_10">
-                        <div class="music_info">
-                            <h4>All The Way Up (K)</h4>
-                            <h5>박재범</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="clip">곡 삭제 아이콘</span>
-                        <i class="xi-close jsItemClose"></i>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
 
     <!-- script -->
     <script
