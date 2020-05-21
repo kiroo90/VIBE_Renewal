@@ -632,7 +632,7 @@ body {
 
 /* 구글플레이 버튼 */
 
-.google_btn_container span{
+.google_btn_container > div{
     width: 200px;
     height: 60px;
     display: flex;
@@ -641,22 +641,22 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.google_btn_container span img {
+.google_btn_container div img {
     width: 30px;
     height: 30px;
     margin-left: 16px;
 }
 
-.google_btn_container span div {
+.google_btn_container div div {
     margin-right: 16px;
 }
 
-.google_btn_container span p:nth-child(1) {
+.google_btn_container div p:nth-child(1) {
     font-size: 14px;
     float: left;
 }
 
-.google_btn_container span p:nth-child(2) {
+.google_btn_container div p:nth-child(2) {
     font-size: 23px;
     font-weight: 600;
 }
@@ -670,7 +670,7 @@ body {
     border-radius: 8px;
 }
 
-.app_btn_container span{
+.app_btn_container > div{
     width: 200px;
     height: 60px;
     display: flex;
@@ -679,21 +679,21 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.app_btn_container span div {
+.app_btn_container div div {
     margin-right: 32px;
 }
 
-.app_btn_container span i {
+.app_btn_container div i {
     font-size: 36px;
     margin-left: 10px;
 }
 
 
-.app_btn_container span p:nth-child(1) {
+.app_btn_container div p:nth-child(1) {
     font-size: 14px;
 }
 
-.app_btn_container span p:nth-child(2) {
+.app_btn_container div p:nth-child(2) {
     font-size: 24px;
     font-weight: 600;
     float: left;
