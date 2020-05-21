@@ -79,7 +79,8 @@ $(document).ready(() => {
 
     //on플레이리스트 리스트 클릭시 해당 리스트로 텍스트,커버 변경 & 선택 디브 컬러변경
     $(".container").on("click", (e) => {
-        const targetImg = $(e.currentTarget).children("img").attr("src");
+        const targetImg = $(e.currentTarget).find("img").attr("src");
+        console.log(targetImg);
         const targetText = $(e.currentTarget).children("div").html();
         $(".jsCover").attr("src" , targetImg);
         $(".play_title").html(targetText);
