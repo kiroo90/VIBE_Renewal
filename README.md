@@ -12,7 +12,8 @@ NAVER VIBE Music Renewal
 
 4. 들려주고 싶어서 Snb_Nav(Dropbox) 구현
 
-5. 로봇 대응 마크업
+5. 스크린 리더기 대응 
+    * clip class로 묶어둠
 
 ## VIBE JS 기능
 
