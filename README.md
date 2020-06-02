@@ -14,6 +14,8 @@ NAVER VIBE Music Renewal
 
 5. 스크린 리더기 대응 
     * clip class로 묶어둠
+    
+6. 스킵메뉴 추가
 
 ## VIBE JS 기능
 
@@ -68,4 +70,5 @@ NAVER VIBE Music Renewal
 
 ## 추가로 필요한 기능
 
-1. 반응형 CSS (@media)         
+1. 반응형 CSS (@media) -완료    
+

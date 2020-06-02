@@ -15,6 +15,12 @@
     <title>VIBE</title>
 </head>
 <body>
+    <!-- 스킵메뉴 -->
+    <div class="skip">
+        <a href="#mag">MAG 바로가기</a>
+        <a href="#news">뉴스 바로가기</a>
+        <a href="#dj">들려주고 싶어서 바로가기</a>
+    </div>
     <!-- 헤더 -->
     <header class="header">
         <!-- gnb nav -->
@@ -82,7 +88,7 @@
         </nav>
         
         <!-- main -->
-        <article class="header_main__container">
+        <article id="mag" class="header_main__container">
             <h2 class="clip">바이브 매거진</h2>
             <div class="icon_arrow-left">
                 <span class="clip">메인 왼쪽 이동 아이콘</span>
@@ -110,7 +116,7 @@
                     <section class="main_info__container">
                         <span class="btn">PICK</span>
                         <h2>
-                            이주의 디깅 #56<br>
+                            이주의 디깅 #56
                             EXO
                         </h2>
                         <p>
@@ -460,7 +466,7 @@
         </article>
     </header>
     <!-- 메인 NEWS -->
-    <section class="news_section__container">
+    <section id="news" class="news_section__container">
         <h2 class="clip">뉴스</h2>
         <!-- news  -->
         <article class="news_header">
@@ -489,7 +495,7 @@
                     <article class="info_news">
                         <p>2020.04.22</p>
                         <h3>
-                            ITZY가 'WANNABE' <br>
+                            ITZY가 'WANNABE'
                             뮤직비디오 조회수 1억을 돌파
                         </h3>
                         <p>
@@ -515,7 +521,7 @@
                         <p>2020.04.28</p>
                         <h3>
                             포스트 말론 
-                            <br>“Circles”, 빌보드 역사상 최장기간 탑10 유지 중
+                            “Circles”, 빌보드 역사상 최장기간 탑10 유지 중
                         </h3>
                         <p>
                             지난 2019년 8월 30일 처음 공개되었던 포스트 말론의 히트 싱글 "Circles". 한국에 '벚꽃연금'이 있다면 미국엔 '써클연금'이 있는 걸까? 세 번째 정규 앨범 [Hollywood's Bleeding]의 세 번째 싱글로 공개되었던 이 곡이 빌보드 핫100 역사상 최초의 기록을 세우는 데 성공했다.
@@ -536,7 +542,7 @@
                     <article class="info_news">
                         <p>2020.04.17</p>
                         <h3>
-                            하이라이트 레코즈, <br>
+                            하이라이트 레코즈, 
                             수비 영입
                         </h3>
                         <p>
@@ -559,7 +565,7 @@
                     <article class="info_news">
                         <p>2020.04.16</p>
                         <h3>
-                            '월드스타DJ' 페기 구<br>
+                            '월드스타DJ' 페기 구
                             남산서울타워서 코로나19 극복 위한 특별 공연
                         </h3>
                         <p>
@@ -582,7 +588,7 @@
                     <article class="info_news">
                         <p>2020.04.21</p>
                         <h3>
-                            ‘펭귄의날’ <br>
+                            ‘펭귄의날’ 
                             기념 음원 발매
                         </h3>
                         <p>
@@ -596,7 +602,7 @@
     </section>
 
     <!-- 메인 DJ스테이션 -->
-    <section class="dj_main_section__container">
+    <section id="dj" class="dj_main_section__container">
         <h2 class="clip">DJ스테이션</h2>
         <!-- DJ -->
         <article class="dj_header">
@@ -609,7 +615,7 @@
                 </a>
             </div>
         </article>
-        <div class="dj_item_container">
+        <div class="dj_item_container cf">
             <div class="item mar_top">
                     <figure>
                         <img class="imgs" src="./img/dj_01.jpg" alt="들려주고 싶어서 이미지">
@@ -816,7 +822,7 @@
                     <h5>MIBS(밉스)</h5>
                 </div>
             </div>
-            <div>
+            <div class="none">
                 <span class="clip">좋아요 하트 아이콘</span>
                 <i class="xi-heart jsHeart"></i>
             </div>
@@ -1133,7 +1139,7 @@
                 <a href="#">로고</a>
             </h2>
             <p>네이버(주) 대표이사 한성숙</p>
-            <div class="flex_contents">
+            <div class="flex_contents media">
                 <p>사업자등록번호</p>
                 <p>220-81-62517</p>
                 <p>통신판매업신고번호</p>
@@ -1161,7 +1167,7 @@
     <script src="./src/jquery.jplayer.min.js"></script> <!--플레이어API.Js-->
     <script src="./js/onclick.js"></script>  <!--클릭이벤트Js-->
     <script src="./js/audio.js"></script>   <!--플레이어Js-->
-    <script src="./js/slide.js"></script>   <!--슬라이더Js-->
+    <script src="./js/slide.js"></script>  
     <script src="./src/slick.js"></script>  <!--슬라이더API.Js-->
 
 </body>

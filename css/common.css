@@ -27,45 +27,85 @@ body {
     overflow: hidden;
 }
 
+.cf::before,
+.cf::after {
+    content: "";
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
 .slick-slide {
     outline: none;
+}
+
+.skip a {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    background: #F5F6FA;
+    padding: 0 12px;
+    text-decoration: none;
+    position: fixed;
+    top: -36px;
+    left: 0;
+    z-index: 100;
+}
+
+.skip a:focus {
+    top: 0;
 }
 
 /* 메인 헤더 */
 
 
 .header_main__container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
     height: 880px;
+    position: relative;
 }
 
-.header_main__container .slide_wrap {
-    display: flex;
+/* .header_main__container .slide_wrap {
+   
     z-index: 10;
     position: relative;
-    width: 1180px;
+    width: 100%;
     margin: 0 auto;
-}
+} */
 
 .header_main__container .slide_wrap .slider_item {
-    width: 1180px;
-    height: 792px;
-    display: flex;
+     display: flex !important;
+     padding-top: 230px;
+     width: 100%;
 }
 
-.header_main__container .photo img,
-.header_main__container .main_info__container {
-    float: left;
+.header_main__container .photo {
     width: 500px;
-    height: 500px;
+    margin: 0px 40px 0px 50px;
+    position: relative;
+}
+
+.header_main__container .photo img {
+    width: 100%;
+}
+
+.header_main__container .main_info__container {
+    width: 100%;
+    max-width: 500px;
 }
 
 .header_main__container .photo .dark,
 .header_main__container .photo .icon_container {
-    width: 500px;
-    height: 500px;
+    height: inherit;
     position: absolute;
-    top: 230px;
-    margin: 0 40px 0px 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
     opacity: 0;
     transition: 0.2s linear;
 }
@@ -102,18 +142,10 @@ body {
     opacity: 1;
 }
 
-.header_main__container .photo img {
-    margin: 230px 40px 0px 50px;
+.header_main__container .main_info__container {
+    padding-top: 60px;
 }
 
-.header_main__container .main_info__container {
-    width: 500px;
-    height: 500px;
-    margin: 230px 0px 40px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .header_main__container .main_info__container .btn {
     display: inline-block;
@@ -128,14 +160,12 @@ body {
 }
 
 .main_info__container h2 {
+    width: 100%;
     font-size: 50px;
     font-weight: bold;
-    margin: 30px 20px;   
+    margin: 20px 20px;   
     line-height: 1.4em; 
     margin-left: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .main_info__container > p {
@@ -143,7 +173,16 @@ body {
     line-height: 1.8em;
     color: var(--darkgrey_002);
     margin: 0 20px 30px 20px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: keep-all;
+    text-overflow: ellipsis;
 }
+
 
 .main_info__container > p:nth-child(3):hover {
     text-decoration: underline;
@@ -183,45 +222,43 @@ body {
     padding-right: 6px;
 }
 
+.header_main__container .icon_arrow-left:hover{
+    background: var(--accent);
+}
+
 .header_main__container .icon_arrow-right i{
     padding-left: 6px;
 }
 
-
-.header_main__container .icon_arrow-left {
-    right: 420px;
+.header_main__container .icon_arrow-right:hover{
+    background: var(--accent);
 }
 
-.header_main__container .icon_arrow-left:hover {
-    background: var(--accent);
+
+.header_main__container .icon_arrow-left {
+    right: 140px;
 }
 
 .header_main__container .icon_arrow-right {
-    right: 360px;
-}
+    right: 60px;
+} 
 
-.header_main__container .icon_arrow-right:hover {
-    background: var(--accent);
-}
 
 /* 섹션 뉴스 */
 /* 섹션 DJ스테이션 레이아웃 포함 */
 
 .news_section__container,
 .dj_main_section__container {
-    width: 1180px;
+    width: 100%;
+    max-width: 1180px;
     margin: 0 auto;
-    margin-bottom: 100px;
 }
 
 .news_header,
 .dj_header {
     display: flex;
     justify-content: space-between;
-    align-items: center
-}
-
-.news_header {
+    align-items: center;
     padding-top:  100px;
     border-top: 1px solid var(--darkgrey);
     box-sizing: border-box;
@@ -257,30 +294,26 @@ body {
 /* --------------------- */
 
 .news_section__container .news_main__container {
-    display: flex;
-    height: 598px;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
     border-bottom: 1px solid var(--darkgrey);
     box-sizing: border-box;
+    padding-bottom: 120px;
 }
 
 .news_main__container .slide_wrap_02 {
-    display: flex;
     position: relative;
-    width: 1180px;
-    height: 498px;
-    margin: 0 auto;
 }
 
 .news_main__container .slide_wrap_02 .slide_item_02 {
-    width: 1180px;
-    height: 792px;
+    width: 100%;
     display: flex !important; 
-    
     /* slick.js는 float를 사용해야 하지만 !important 줘서 강제로 flex를 사용할 수 있다. */
-}
+} 
 
 .slide_line {
-    display: flex;
+    display: flex !important;
     position: absolute;
     bottom: 40px;
     right: 0;
@@ -304,16 +337,18 @@ body {
     height: 5px;
 }
 
+
 .news_main__container .photo_news {
+    width: 100%;
+    height: 448px;
     position: relative;
-    /* float: left;
-    width: 700px; */
     margin-top: 50px;
-}
+} 
 
 .news_main__container .photo_news img {
-    width: 700px;
+    width: 100%;
     height: 448px;
+    max-width: 700px;
     cursor: pointer;
 }
 
@@ -321,8 +356,7 @@ body {
 .news_main__container .photo_news .icon_container {
     position: absolute;
     top: 0px;
-    width: 700px;
-    height: 448px;
+    width: 100%;
     opacity: 0;
     transition: 0.2s linear;
 }
@@ -361,8 +395,8 @@ body {
 
 
 .news_main__container .info_news {
-    /* float: left; */
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     height: 448px;
     background: var(--White);
     color: var(--dark);
@@ -373,6 +407,10 @@ body {
 .news_main__container .info_news h3,
 .news_main__container .info_news a {
     margin: 0 36px;
+}
+
+.news_main__container .info_news p {
+    text-align: justify;
 }
 
 .news_main__container .info_news p:nth-child(3):hover {
@@ -393,8 +431,9 @@ body {
     font-weight: bold;
     line-height: 1.3em;
     margin-bottom: 30px;
-    white-space: nowrap;
-    overflow: hidden;
+    width: 400px; 
+    white-space: nowrap; 
+    overflow: hidden; 
     text-overflow: ellipsis;
 }
 
@@ -403,8 +442,6 @@ body {
     font-weight: 400;
     line-height: 1.6em;
     color: var(--darkgray_003);
-    height: 100px;
-    overflow: hidden;
 }
 
 .news_main__container .info_news a {
@@ -415,42 +452,25 @@ body {
     margin-top: 16px;
 }
 
-.info_news .slide_news__bar {
-   display: flex;
-   width: 480px;
-   margin-top: 84px;
-   align-items: center;
-   justify-content: center;
-}
-
-.info_news .slide_news__bar .news_bar_btn {
-    width: 70px;
-    height: 3px;
-    margin: 0 7px;
-    background: var(--darkgrey_002);
-    cursor: pointer;
-}
-
-.info_news .slide_news__bar .slideOn {
-    background: var(--darkgrey);
-    height: 4px;
-}
 
 /* 섹션 DJ스테이션 */
-.dj_main_section__container {
-    height: 860px;
+ .dj_main_section__container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
     border-bottom: 1px solid var(--darkgrey);
     box-sizing: border-box;
+    padding-bottom: 100px;
 }
 
 .dj_item_container {
-    width: 1180px;
+    width: 100%;
     margin-top: 50px;
 }
 
 .dj_item_container .item {
-    width: 380px;
-    height: 320px;
+    width: 100%;
+    max-width: 380px;
     position: relative;
     margin: 20px 20px 0 0;
     float: left;
@@ -467,8 +487,8 @@ body {
 
 
 .dj_item_container .item img {
-    width: 380px;
-    height: 320px;
+    width: 100%;
+    height: 100%;
 }
 
 .dj_item_container .item .dark,
@@ -490,12 +510,14 @@ body {
 
 .dj_item_container .item .dark {
     background: var(--dark);
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
 }
 
 .dj_item_container .item .list {
-    margin-top: 20px;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 40px;
     margin-left: 30px;
 }
 
@@ -515,8 +537,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 320px;
-    margin-top: 160px;
+    margin-top: 200px;
     font-size: 30px;
     color: var(--darkgrey_002);
     position: relative;
@@ -573,18 +594,20 @@ body {
 
 .dj_item_container .list .list_dropdown.up {
     height: 236px;
-}
+}  
 
 
 
 /* app 광고 */
 
 .banner_section {
+    margin-top: 100px;
     margin-bottom: 200px;
 }
 
 .banner_container {
-    width: 1180px;
+    width: 100%;
+    max-width: 1180px;
     height: 400px;
     margin: 0 auto;
     background:  linear-gradient(108.73deg, #FD3A50 0%, #7F4BFC 100%);
@@ -594,7 +617,8 @@ body {
 }
 
 .banner_container .info {
-    width: 622px;
+    width: 100%;
+    max-width: 622px;
     text-align: center;
 }
 
@@ -628,7 +652,7 @@ body {
 .google_btn_container,
 .app_btn_container {
     cursor: pointer;
-}
+} 
 
 /* 구글플레이 버튼 */
 
@@ -659,7 +683,7 @@ body {
 .google_btn_container div p:nth-child(2) {
     font-size: 23px;
     font-weight: 600;
-}
+} 
 
 /* 앱스토어 버튼 */
 
@@ -715,17 +739,18 @@ body {
 
 .footer_container {
     width: 100%;
+    margin: 0 auto;
     height: 380px;
     background: var(--dark_002);
 }
 
 .footer_container .footer_nav__container {
-    height: 60px;
     background: var(--dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 130px;
+    height: 60px;
 }
 
 .footer_container .footer_nav__container .flex_contents a {
@@ -1090,6 +1115,366 @@ body {
     color: var(--darkgrey);
     cursor: pointer;
     padding: 10px;
+}
+
+@media (max-width:1200px) {
+     
+    /* 들려주고 싶어서 */
+
+    .dj_item_container {
+        max-width: 780px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .dj_item_container .item {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .dj_item_container .item:nth-child(2n) {
+        margin-left: 20px;
+    }
+
+
+    .dj_item_container .item:hover .list{
+        opacity:1;
+    }
+    
+    .dj_item_container .item:hover .dark {
+        opacity:0.8;
+    }
+
+    .dj_item_container .item .dark {
+        background: var(--dark);
+        width: 100%;
+        height: 100%
+    }
+    /* 들려주고 싶어서 종료 */
+    /* 배너 */
+    .banner_container .info {
+        max-width:1180px;
+    }
+
+    .banner_photo {
+        display: none;
+    }
+    /* 배너 종료 */
+    /* 플레이어 */
+    
+    .player_nav__bottom {
+        max-width: 1180px;
+    }
+
+    .player_nav__bottom .play_info {
+        margin-left: 10px;
+    }
+
+    .player_nav__bottom i {
+        font-size: 26px;
+        color: var(--darkgray_003);
+        cursor: pointer;
+        transform: scale(1);
+        transition: 0.3s;
+    }
+
+    .player_nav__bottom i:hover {
+        transform: scale(1.2);
+    }
+
+    .footer_container {
+        height: 540px;
+    }
+
+    .footer_container .footer_nav__container {
+        display: block;
+    }
+
+    .footer_container .footer_nav__container .flex_contents a {
+        margin-bottom: 10px;
+    }
+
+
+    .footer_container .footer_nav__container .flex_contents p{
+        margin-bottom: 10px;
+    }
+
+    /* 하단 푸터 */
+    .footer_bottom > h2 {
+        width: 100%;
+        max-width: 190px;
+        margin: 16px 0;
+    }
+
+    .footer_bottom > p {
+        margin-bottom: 10px;
+    }
+
+    .footer_bottom > .flex_contents {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .footer_bottom > .flex_contents p {
+        margin-bottom: 6px;
+    }
+}
+
+
+@media (max-width:900px) {
+    
+    .header_main__container {
+        width: 92%;
+        height: initial;
+    }
+
+    
+    .header_main__container .slide_wrap .slider_item {
+        display: block !important;
+        margin: 0 auto;
+    }
+
+    .header_main__container .photo {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .header_main__container .photo img,
+    .header_main__container .main_info__container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header_main__container .photo .dark,
+    .header_main__container .photo .icon_container {
+        opacity: 1;
+    }
+
+    .main_info__container h2 {
+        font-size: 30px;
+        margin: 10px 20px; 
+    }
+
+    .txt_container {
+        padding-bottom: 60px;
+    }
+
+    .txt_container > p {
+        font-size: 16px;   
+    }
+
+    .header_main__container .icon_arrow-left,
+    .header_main__container .icon_arrow-right {
+        display: none;
+    }
+    /* 매거진 종료 */
+    
+    /* 뉴스 */
+
+    .news_section__container h2,
+    .dj_main_section__container h2 {
+        font-size: 30px;
+    }   
+
+    .news_section__container .view_more__container a,
+    .dj_main_section__container .view_more__container a {
+        font-size: 16px;
+    }
+
+    .news_section__container .view_more__container a i, 
+    .dj_main_section__container .view_more__container a i {
+        font-size: 23px;
+    }
+
+    /* --------------------- */
+
+    .news_section__container {
+        width: 92%;
+        max-width: 700px;
+    }
+
+    .news_main__container .slide_wrap_02 .slide_item_02 {
+        display: block !important; 
+    } 
+
+    .slide_line {
+        display: none !important;
+    }
+
+    .news_main__container .photo_news {
+        height: initial;
+    } 
+
+    .news_main__container .photo_news img {
+        height: initial;
+    }
+
+    .news_main__container .photo_news .dark,
+    .news_main__container .photo_news .icon_container {
+        height: 100%;
+        opacity: 1;
+    }
+
+    .news_main__container .info_news {
+        width: 100%;
+        max-width: 700px;
+        height: 360px;
+        margin-top: 0px;
+    }
+
+    .news_main__container .info_news p:first-child {
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .news_main__container .info_news h3 {
+        font-size: 30px;
+    }
+    /* 뉴스 종료 */
+
+    /* 플레이어 업 */  
+    .play_view__container .main_cover {
+        display: none;
+    }
+
+    .play_view__container .list_right_container {
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+}
+
+@media (max-width:800px) {
+     
+    /* 들려주고 싶어서 */
+
+    .dj_item_container {
+        width: 92%;
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .dj_item_container .item {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .dj_item_container .item.item:nth-child(2n) {
+        margin-left: 0px;
+    }
+
+    .dj_item_container .item:hover .list{
+        opacity:1;
+    }
+    
+    .dj_item_container .item:hover .dark {
+        opacity:0.8;
+    }
+
+    .dj_item_container .item .list {
+        width: 100%;
+        max-width: 240px;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .dj_item_container .item .dark {
+        background: var(--dark);
+        width: 100%;
+        height: 100%
+    }
+
+    .dj_item_container .item .list .icon_container {
+        margin-top: 160px;
+    }
+
+    .banner_container .info h3 {
+        font-size: 30px;
+    }
+    
+    .banner_container .info .app_btn_container,
+    .banner_container .info .google_btn_container {
+        margin: 0 auto;
+    }
+
+    .banner_container .info .app_btn_container {
+        margin-top: 20px;
+    }
+    
+    .btn_container {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .jsCover,
+    .player_nav__bottom .play_info .drop,
+    .player_nav__bottom .play_info .none {
+        display: none;
+    }
+
+    .footer_container .footer_nav__container {
+        display: block;
+        padding: 0 ;
+        height: initial;
+    }
+
+    /* 하단 푸터 */
+
+    .footer_bottom  {
+        margin: 0 auto;
+    }
+
+    .footer_bottom > h2 {
+        width: 100%;
+        max-width: 190px;
+        margin: 16px 0;
+    }
+
+    .footer_bottom > p {
+        margin-bottom: 10px;
+    }
+
+    .footer_bottom > .flex_contents {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .footer_bottom > .flex_contents p {
+        margin-bottom: 6px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .nav_snb__none {
+        width: 90%;
+        height: 100%;
+        z-index: 50;
+        overflow-y: scroll;
+    }
+
+    
+    .footer_container {
+        height: 660px;
+    }
+
+    .footer_container .footer_nav__container .flex_contents,
+    .footer_container .footer_nav__container .flex_contents a{
+        text-align: center;
+        display: block;
+        margin: 10px 10px;
+    }
+
+    .footer_bottom > h2 {
+        margin: 0 auto;
+    }
+    .footer_bottom  p {
+        text-align: center;
+    }
 }
 
 /* 오디오 바닐라 자바스크립트 코드 연습 CSS */

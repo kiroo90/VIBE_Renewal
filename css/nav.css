@@ -10,8 +10,6 @@
 }
 
 .header {
-    width: 100%;
-    height: 100%;
 }
 
 .header .nav_gnb {
@@ -27,7 +25,8 @@
 }
 
 .header .nav_gnb > h1 {
-    width: 190px;
+    width: 100%;
+    max-width: 190px;
     height: 60px;
     background: url(../img/logo\ 1.png);
     background-position: center;
@@ -170,7 +169,7 @@ input::placeholder {
     top: 50%;
     left: 796px;
     transform: translateY(-50%);
-}
+} 
 
 /* snb 네비 */
 
@@ -180,7 +179,7 @@ input::placeholder {
     background: var(--dark_003);
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -100%;
     transition: 0.5s;
     z-index: 25;
 }
@@ -290,7 +289,6 @@ input::placeholder {
 
 .nav_snb__none .benner {
     width: 240px;
-    /* height: 120px; */
     display: flex;
     margin: 0 auto;
     overflow: hidden;
@@ -301,7 +299,14 @@ input::placeholder {
     width: 240px;
     height: 100px;
     object-fit: fill;
-}
-
+} 
 
 /* 서브네비 일단 종료... */
+
+
+@media (max-width:1100px) {
+
+    .header .nav_gnb .list_gnb {
+        display: none;
+    }
+}

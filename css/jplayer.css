@@ -108,3 +108,23 @@
 .jp-time-holder div:nth-child(2) {
     margin: 0 4px;
 }
+
+@media (max-width:1200px) {
+    .jp-time-holder {
+        display: none !important;
+    }
+}
+
+@media (max-width:800px) {
+    .jp-volume-controls {
+        display: none !important;
+    }
+
+    .jp-controls i {
+        margin: 0;
+    }
+    .xi-repeat,
+    .xi-shuffle {
+        display: none;
+    }
+}
