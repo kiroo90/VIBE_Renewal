@@ -1396,7 +1396,7 @@ body {
 
 
     .footer_container .footer_nav__container .flex_contents p{
-        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
 
     /* 하단 푸터 */
