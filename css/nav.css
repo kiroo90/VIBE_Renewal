@@ -306,6 +306,14 @@ input::placeholder {
 
 @media (max-width:1100px) {
 
+    .header .nav_gnb {
+        height: 50px;
+    }
+
+    .header .nav_gnb > h1 {
+        background-size: contain;
+        width: 100px;
+    }
     .header .nav_gnb .list_gnb {
         display: none;
     }
