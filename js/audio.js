@@ -2,10 +2,10 @@ $(document).ready(() => {
     $("#jquery_jplayer").jPlayer({
         ready: (e) => {
             $(e.target).jPlayer("setMedia", {
-                m4a: "http://k007.kiwi6.com/hotlink/tfaw4el9c5/Moon_River_Jazz.mp4"
+                m4a: "./MIBS.mp3"
             });
         },
-        swfPath: "./src",		
+        swfPath: "./",		
         supplied: "m4a, mp3, oga, wav",
         cssSelectorAncestor: "#jp_container_2",
         autoBlur: true
